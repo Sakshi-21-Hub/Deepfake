@@ -43,33 +43,38 @@ Using a **Random Forest classifier**, the system delivers **high accuracy**, **l
 git clone https://github.com/Sakshi-21-Hub/Deepfake.git
 cd deepfake-release
 
-**## 2. Create and Activate a Virtual Environment**
+**### 2. Create and Activate a Virtual Environmen**
+```bash
 python -m venv .venv
 .\.venv\Scripts\activate
 
-**## 3. Install Dependencies**
+**### 3. Install Dependencies**
+```bash
 pip install -r requirements.txt
 
-**## 🚀 Usage Instructions
-## ▶️ Run the Streamlit Application**
+**### 🚀 Usage Instructions
+### ▶️ Run the Streamlit Application**
 
 Launch the user interface for real-time analysis:
-
+```bash
 streamlit run main.py
 
-**## 🧩 Train the Model**
+**### 🧩 Train the Model**
 
 Train the Random Forest model using your dataset:
-
+```bash
 python train_real_dataset.py
 
-**## 🔍 Run Predictions in Code**
+**### 🔍 Run Predictions in Code**
+```bash
 from models.deepfake_detector import DeepfakeDetector
 
-**## Initialize the detector**
+**### Initialize the detector**
+```bash
 detector = DeepfakeDetector()
 
-**## Run predictions**
+**### Run predictions**
+```bash
 result = detector.predict_from_features(features)
 print(f"Confidence: {result['confidence']}%")
 print(f"Is Deepfake: {result['is_deepfake']}")
