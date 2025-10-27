@@ -57,9 +57,9 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Running the Application
+### Run the Streamlit Application
 
-To start the Streamlit application:
+Launch the user interface for real-time analysis:
 
 ```powershell
 streamlit run main.py
@@ -67,23 +67,23 @@ streamlit run main.py
 
 ### Training the Model
 
-To train the model on your dataset:
+Train the Random Forest model using your dataset:
 
 ```powershell
 python train_real_dataset.py
 ```
 
-### Running Predictions
+### Run Predictions in Code
 
 Use the trained model for predictions:
 
 ```python
 from models.deepfake_detector import DeepfakeDetector
 
-# Initialize detector
+# Initialize the detector
 detector = DeepfakeDetector()
 
-# Make predictions
+# Run predictions
 result = detector.predict_from_features(features)
 print(f"Confidence: {result['confidence']}%")
 print(f"Is Deepfake: {result['is_deepfake']}")
@@ -107,7 +107,8 @@ print(f"Is Deepfake: {result['is_deepfake']}")
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions and suggestions are highly appreciated!
+Feel free to fork the repository and submit a pull request with improvements or new features.
 
 ## License
 
@@ -115,6 +116,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Author
 
-Developed by Neha Gupta
+Created by Sakshi Khanvilkar
 
 ## Acknowledgments
+
+Special thanks to all contributors, researchers, and open-source developers whose work inspired and supported the development of this project.
