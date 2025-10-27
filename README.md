@@ -40,12 +40,6 @@ Using a **Random Forest classifier**, the system delivers **high accuracy**, **l
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/n-eha0/deepfake-release.git
-cd deepfake-release
-
-
-#⚙️ Installation Guide
-1. Clone the Repository
 git clone https://github.com/Sakshi-21-Hub/Deepfake.git
 cd deepfake-release
 
