@@ -1,13 +1,13 @@
-#🎧 Audio Deepfake Detection System
+**# 🎧 Audio Deepfake Detection System**
 
 An advanced machine learning–driven solution for detecting audio deepfakes through acoustic feature analysis and random forest classification.
 
-#🧠 Overview
+**# 🧠 Overview**
 
 This project introduces a robust and intelligent audio deepfake detection framework that leverages 53-dimensional acoustic features to distinguish between authentic and synthetically generated speech.
 Using a Random Forest classifier, the system delivers high accuracy, low false positives, and real-time detection capabilities.
 
-#✨ Key Features
+**# ✨ Key Features**
 
 Extraction of 53-dimensional acoustic features
 
@@ -49,13 +49,13 @@ Launch the user interface for real-time analysis:
 
 streamlit run main.py
 
-#🧩 Train the Model
+**#🧩 Train the Model**
 
 Train the Random Forest model using your dataset:
 
 python train_real_dataset.py
 
-#🔍 Run Predictions in Code
+**# 🔍 Run Predictions in Code**
 from models.deepfake_detector import DeepfakeDetector
 
 # Initialize the detector
