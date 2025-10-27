@@ -1,13 +1,13 @@
-🎧 Audio Deepfake Detection System
+#🎧 Audio Deepfake Detection System
 
 An advanced machine learning–driven solution for detecting audio deepfakes through acoustic feature analysis and random forest classification.
 
-🧠 Overview
+#🧠 Overview
 
 This project introduces a robust and intelligent audio deepfake detection framework that leverages 53-dimensional acoustic features to distinguish between authentic and synthetically generated speech.
 Using a Random Forest classifier, the system delivers high accuracy, low false positives, and real-time detection capabilities.
 
-✨ Key Features
+#✨ Key Features
 
 Extraction of 53-dimensional acoustic features
 
@@ -21,41 +21,41 @@ Language detection integrated into the analysis pipeline
 
 High detection accuracy with optimized model performance
 
-🧰 Technology Stack
-Category	Technologies
-Machine Learning Frameworks	scikit-learn, XGBoost
-Audio Processing	librosa, soundfile, praat-parselmouth
-Deep Learning	PyTorch
-Speech Recognition	OpenAI Whisper
-Data Analysis	NumPy, Pandas
-Visualization	Plotly, Matplotlib, Seaborn
-User Interface	Streamlit
-⚙️ Installation Guide
+#🧰 Technology Stack
+Machine Learning Frameworks :-	scikit-learn, XGBoost
+Audio Processing :-	librosa, soundfile, praat-parselmouth
+Deep Learning :-	PyTorch
+Speech Recognition :-	OpenAI Whisper
+Data Analysis :-	NumPy, Pandas
+Visualization :-	Plotly, Matplotlib, Seaborn
+User Interface :-	Streamlit
+
+#⚙️ Installation Guide
 1. Clone the Repository
-git clone https://github.com/n-eha0/deepfake-release.git
+git clone https://github.com/Sakshi-21-Hub/Deepfake.git
 cd deepfake-release
 
-2. Create and Activate a Virtual Environment
+#2. Create and Activate a Virtual Environment
 python -m venv .venv
 .\.venv\Scripts\activate
 
-3. Install Dependencies
+#3. Install Dependencies
 pip install -r requirements.txt
 
-🚀 Usage Instructions
-▶️ Run the Streamlit Application
+#🚀 Usage Instructions
+#▶️ Run the Streamlit Application
 
 Launch the user interface for real-time analysis:
 
 streamlit run main.py
 
-🧩 Train the Model
+#🧩 Train the Model
 
 Train the Random Forest model using your dataset:
 
 python train_real_dataset.py
 
-🔍 Run Predictions in Code
+#🔍 Run Predictions in Code
 from models.deepfake_detector import DeepfakeDetector
 
 # Initialize the detector
@@ -79,19 +79,19 @@ print(f"Is Deepfake: {result['is_deepfake']}")
 │   └── visualization.py         # Visualization and plotting tools
 └── trained_models/              # Trained model artifacts
 
-🤝 Contributing
+#🤝 Contributing
 
 Contributions and suggestions are highly appreciated!
 Feel free to fork the repository and submit a pull request with improvements or new features.
 
-📜 License
+#📜 License
 
 This project is licensed under the MIT License — see the LICENSE file for more information.
 
-👩‍💻 Author
+#👩‍💻 Author
 
 Created by Sakshi Khanvilkar
 
-🙏 Acknowledgments
+#🙏 Acknowledgments
 
 Special thanks to all contributors, researchers, and open-source developers whose work inspired and supported the development of this project.
