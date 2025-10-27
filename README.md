@@ -1,117 +1,97 @@
-# Audio Deepfake Detection System
+🎧 Audio Deepfake Detection System
 
-An advanced machine learning system for detecting audio deepfakes using acoustic feature analysis and random forest classification.
+An advanced machine learning–driven solution for detecting audio deepfakes through acoustic feature analysis and random forest classification.
 
-## Overview
+🧠 Overview
 
-This project implements a robust audio deepfake detection system that analyzes 53-dimensional acoustic features to identify artificially generated or manipulated audio content. The system uses a Random Forest classifier trained on a comprehensive dataset of real and fake audio samples.
+This project introduces a robust and intelligent audio deepfake detection framework that leverages 53-dimensional acoustic features to distinguish between authentic and synthetically generated speech.
+Using a Random Forest classifier, the system delivers high accuracy, low false positives, and real-time detection capabilities.
 
-## Features
+✨ Key Features
 
-- 53-dimensional acoustic feature extraction
-- Advanced Random Forest classification model
-- Real-time audio analysis capabilities
-- Support for multiple audio formats
-- Interactive visualization of detection results
-- Language detection integration
-- High accuracy and low false-positive rate
+Extraction of 53-dimensional acoustic features
 
-## Tech Stack
+Random Forest–based classification for deepfake detection
 
-- **Core ML Framework**: scikit-learn, XGBoost
-- **Audio Processing**: librosa, soundfile, praat-parselmouth
-- **Deep Learning**: PyTorch
-- **Speech Processing**: OpenAI Whisper
-- **Data Analysis**: NumPy, Pandas
-- **Visualization**: Plotly, Matplotlib, Seaborn
-- **UI**: Streamlit
+Real-time audio analysis with multi-format support
 
-## Installation
+Interactive visualizations of prediction results
 
-1. Clone the repository:
-```bash
+Language detection integrated into the analysis pipeline
+
+High detection accuracy with optimized model performance
+
+🧰 Technology Stack
+Category	Technologies
+Machine Learning Frameworks	scikit-learn, XGBoost
+Audio Processing	librosa, soundfile, praat-parselmouth
+Deep Learning	PyTorch
+Speech Recognition	OpenAI Whisper
+Data Analysis	NumPy, Pandas
+Visualization	Plotly, Matplotlib, Seaborn
+User Interface	Streamlit
+⚙️ Installation Guide
+1. Clone the Repository
 git clone https://github.com/n-eha0/deepfake-release.git
 cd deepfake-release
-```
 
-2. Create and activate a virtual environment:
-```powershell
+2. Create and Activate a Virtual Environment
 python -m venv .venv
 .\.venv\Scripts\activate
-```
 
-3. Install dependencies:
-```powershell
+3. Install Dependencies
 pip install -r requirements.txt
-```
 
-## Usage
+🚀 Usage Instructions
+▶️ Run the Streamlit Application
 
-### Running the Application
+Launch the user interface for real-time analysis:
 
-To start the Streamlit application:
-
-```powershell
 streamlit run main.py
-```
 
-### Training the Model
+🧩 Train the Model
 
-To train the model on your dataset:
+Train the Random Forest model using your dataset:
 
-```powershell
 python train_real_dataset.py
-```
 
-### Running Predictions
-
-Use the trained model for predictions:
-
-```python
+🔍 Run Predictions in Code
 from models.deepfake_detector import DeepfakeDetector
 
-# Initialize detector
+# Initialize the detector
 detector = DeepfakeDetector()
 
-# Make predictions
+# Run predictions
 result = detector.predict_from_features(features)
 print(f"Confidence: {result['confidence']}%")
 print(f"Is Deepfake: {result['is_deepfake']}")
-```
 
-## Project Structure
-
-```
-├── main.py                 # Main application entry point
-├── train_real_dataset.py   # Model training script
+📂 Project Structure
+├── main.py                  # Streamlit application entry point
+├── train_real_dataset.py    # Model training script
 ├── models/
-│   ├── deepfake_detector.py    # Core detector implementation
-│   ├── feature_extractor.py    # Feature extraction
-│   └── language_detector.py    # Language detection
+│   ├── deepfake_detector.py     # Core detection logic
+│   ├── feature_extractor.py     # Acoustic feature extraction
+│   └── language_detector.py     # Language identification module
 ├── utils/
-│   ├── audio_utils.py      # Audio processing utilities
-│   ├── model_loader.py     # Model loading utilities
-│   └── visualization.py    # Visualization tools
-└── trained_models/         # Saved model artifacts
-```
+│   ├── audio_utils.py           # Audio processing utilities
+│   ├── model_loader.py          # Model loading helpers
+│   └── visualization.py         # Visualization and plotting tools
+└── trained_models/              # Trained model artifacts
 
-## Contributing
+🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions and suggestions are highly appreciated!
+Feel free to fork the repository and submit a pull request with improvements or new features.
 
-## License
+📜 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License — see the LICENSE file for more information.
 
-## Author
+👩‍💻 Author
 
-Developed by Neha Gupta
+Created by Sakshi Khanvilkar
 
-## Acknowledgments
+🙏 Acknowledgments
 
-- Thanks to all contributors who have helped with the development
-
-
----
-
-For more information or to report issues, please visit the [GitHub repository](https://github.com/n-eha0/deepfake-release).
+Special thanks to all contributors, researchers, and open-source developers whose work inspired and supported the development of this project.
