@@ -43,68 +43,78 @@ Using a **Random Forest classifier**, the system delivers **high accuracy**, **l
 git clone https://github.com/Sakshi-21-Hub/Deepfake.git
 cd deepfake-release
 ---
-
-2. Create and Activate a Virtual Environment
-```bash
+```
+### 2. Create and activate a virtual environment:
+```powershell
 python -m venv .venv
 .\.venv\Scripts\activate
+```
 
-**### 3. Install Dependencies**
-```bash
+### 3. Install dependencies:
+```powershell
 pip install -r requirements.txt
+```
 
-**### 🚀 Usage Instructions
-### ▶️ Run the Streamlit Application**
+## Usage
 
-Launch the user interface for real-time analysis:
-```bash
+### Running the Application
+
+To start the Streamlit application:
+
+```powershell
 streamlit run main.py
+```
 
-**### 🧩 Train the Model**
+### Training the Model
 
-Train the Random Forest model using your dataset:
-```bash
+To train the model on your dataset:
+
+```powershell
 python train_real_dataset.py
+```
 
-**### 🔍 Run Predictions in Code**
-```bash
+### Running Predictions
+
+Use the trained model for predictions:
+
+```python
 from models.deepfake_detector import DeepfakeDetector
 
-**### Initialize the detector**
-```bash
+# Initialize detector
 detector = DeepfakeDetector()
 
-**### Run predictions**
-```bash
+# Make predictions
 result = detector.predict_from_features(features)
 print(f"Confidence: {result['confidence']}%")
 print(f"Is Deepfake: {result['is_deepfake']}")
+```
 
-📂 Project Structure
-├── main.py                  # Streamlit application entry point
-├── train_real_dataset.py    # Model training script
+## Project Structure
+
+```
+├── main.py                 # Main application entry point
+├── train_real_dataset.py   # Model training script
 ├── models/
-│   ├── deepfake_detector.py     # Core detection logic
-│   ├── feature_extractor.py     # Acoustic feature extraction
-│   └── language_detector.py     # Language identification module
+│   ├── deepfake_detector.py    # Core detector implementation
+│   ├── feature_extractor.py    # Feature extraction
+│   └── language_detector.py    # Language detection
 ├── utils/
-│   ├── audio_utils.py           # Audio processing utilities
-│   ├── model_loader.py          # Model loading helpers
-│   └── visualization.py         # Visualization and plotting tools
-└── trained_models/              # Trained model artifacts
+│   ├── audio_utils.py      # Audio processing utilities
+│   ├── model_loader.py     # Model loading utilities
+│   └── visualization.py    # Visualization tools
+└── trained_models/         # Saved model artifacts
+```
 
-**## 🤝 Contributing**
+## Contributing
 
-Contributions and suggestions are highly appreciated!
-Feel free to fork the repository and submit a pull request with improvements or new features.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-**## 📜 License**
+## License
 
-This project is licensed under the MIT License — see the LICENSE file for more information.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-**##👩‍💻 Author**
+## Author
 
-Created by Sakshi Khanvilkar
+Developed by Neha Gupta
 
-**##🙏 Acknowledgments**
-Special thanks to all contributors, researchers, and open-source developers whose work inspired and supported the development of this project.
+## Acknowledgments
