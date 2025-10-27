@@ -43,33 +43,33 @@ Using a **Random Forest classifier**, the system delivers **high accuracy**, **l
 git clone https://github.com/Sakshi-21-Hub/Deepfake.git
 cd deepfake-release
 
-#2. Create and Activate a Virtual Environment
+**## 2. Create and Activate a Virtual Environment**
 python -m venv .venv
 .\.venv\Scripts\activate
 
-#3. Install Dependencies
+**## 3. Install Dependencies**
 pip install -r requirements.txt
 
-#🚀 Usage Instructions
-#▶️ Run the Streamlit Application
+**## 🚀 Usage Instructions
+## ▶️ Run the Streamlit Application**
 
 Launch the user interface for real-time analysis:
 
 streamlit run main.py
 
-**#🧩 Train the Model**
+**## 🧩 Train the Model**
 
 Train the Random Forest model using your dataset:
 
 python train_real_dataset.py
 
-**# 🔍 Run Predictions in Code**
+**## 🔍 Run Predictions in Code**
 from models.deepfake_detector import DeepfakeDetector
 
-# Initialize the detector
+**## Initialize the detector**
 detector = DeepfakeDetector()
 
-# Run predictions
+**## Run predictions**
 result = detector.predict_from_features(features)
 print(f"Confidence: {result['confidence']}%")
 print(f"Is Deepfake: {result['is_deepfake']}")
@@ -87,19 +87,18 @@ print(f"Is Deepfake: {result['is_deepfake']}")
 │   └── visualization.py         # Visualization and plotting tools
 └── trained_models/              # Trained model artifacts
 
-#🤝 Contributing
+**## 🤝 Contributing**
 
 Contributions and suggestions are highly appreciated!
 Feel free to fork the repository and submit a pull request with improvements or new features.
 
-#📜 License
+**## 📜 License**
 
 This project is licensed under the MIT License — see the LICENSE file for more information.
 
-#👩‍💻 Author
+**##👩‍💻 Author**
 
 Created by Sakshi Khanvilkar
 
-#🙏 Acknowledgments
-
+**##🙏 Acknowledgments**
 Special thanks to all contributors, researchers, and open-source developers whose work inspired and supported the development of this project.
