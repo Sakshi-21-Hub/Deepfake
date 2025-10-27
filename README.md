@@ -1,34 +1,48 @@
-**# 🎧 Audio Deepfake Detection System**
+# 🎧 Audio Deepfake Detection System
 
-An advanced machine learning–driven solution for detecting audio deepfakes through acoustic feature analysis and random forest classification.
+An advanced **machine learning–driven solution** for detecting audio deepfakes through **acoustic feature analysis** and **random forest classification**.
 
-**# 🧠 Overview**
+---
 
-This project introduces a robust and intelligent audio deepfake detection framework that leverages 53-dimensional acoustic features to distinguish between authentic and synthetically generated speech.
-Using a Random Forest classifier, the system delivers high accuracy, low false positives, and real-time detection capabilities.
+## 🧠 Overview
 
-**# ✨ Key Features**
+This project introduces a **robust and intelligent audio deepfake detection framework** that leverages **53-dimensional acoustic features** to distinguish between authentic and synthetically generated speech.  
+Using a **Random Forest classifier**, the system delivers **high accuracy**, **low false positives**, and **real-time detection capabilities**.
 
-Extraction of 53-dimensional acoustic features
+---
 
-Random Forest–based classification for deepfake detection
+## ✨ Key Features
 
-Real-time audio analysis with multi-format support
+- Extraction of **53-dimensional acoustic features**  
+- **Random Forest–based classification** for deepfake detection  
+- **Real-time audio analysis** with multi-format support  
+- **Interactive visualizations** of prediction results  
+- **Language detection** integrated into the analysis pipeline  
+- **High detection accuracy** with optimized model performance  
 
-Interactive visualizations of prediction results
+---
 
-Language detection integrated into the analysis pipeline
+## 🧰 Technology Stack
 
-High detection accuracy with optimized model performance
+| Category | Technologies |
+|-----------|---------------|
+| **Machine Learning Frameworks** | scikit-learn, XGBoost |
+| **Audio Processing** | librosa, soundfile, praat-parselmouth |
+| **Deep Learning** | PyTorch |
+| **Speech Recognition** | OpenAI Whisper |
+| **Data Analysis** | NumPy, Pandas |
+| **Visualization** | Plotly, Matplotlib, Seaborn |
+| **User Interface** | Streamlit |
 
-#🧰 Technology Stack
-Machine Learning Frameworks :-	scikit-learn, XGBoost
-Audio Processing :-	librosa, soundfile, praat-parselmouth
-Deep Learning :-	PyTorch
-Speech Recognition :-	OpenAI Whisper
-Data Analysis :-	NumPy, Pandas
-Visualization :-	Plotly, Matplotlib, Seaborn
-User Interface :-	Streamlit
+---
+
+## ⚙️ Installation Guide
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/n-eha0/deepfake-release.git
+cd deepfake-release
+
 
 #⚙️ Installation Guide
 1. Clone the Repository
