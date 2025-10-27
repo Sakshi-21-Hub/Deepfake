@@ -42,7 +42,9 @@ Using a **Random Forest classifier**, the system delivers **high accuracy**, **l
 ```bash
 git clone https://github.com/Sakshi-21-Hub/Deepfake.git
 cd deepfake-release
-
+**2. Create and Activate a Virtual Environment**
+python -m venv .venv
+.\.venv\Scripts\activate
 **### 2. Create and Activate a Virtual Environmen**
 ```bash
 python -m venv .venv
