@@ -163,7 +163,36 @@ def main():
     with st.sidebar:
         st.header("Settings")
         sensitivity = st.slider("Detection Sensitivity", 0.1, 1.0, 0.7)
-        language_mode = st.selectbox("Language Mode", ["Auto-detect", "English", "Hindi", "Urdu"])
+        language_mode = st.selectbox("Language Mode", ["Auto-detect", "English", "Hindi", "Urdu",
+        "Spanish",
+        "French",
+        "German",
+        "Chinese (Simplified)",
+        "Chinese (Traditional)",
+        "Japanese",
+        "Korean",
+        "Arabic",
+        "Portuguese",
+        "Russian",
+        "Italian",
+        "Bengali",
+        "Punjabi",
+        "Gujarati",
+        "Tamil",
+        "Telugu",
+        "Marathi",
+        "Malayalam",
+        "Turkish",
+        "Thai",
+        "Vietnamese",
+        "Indonesian",
+        "Persian (Farsi)",
+        "Hebrew",
+        "Greek",
+        "Dutch",
+        "Polish",
+        "Kannada",
+        "Swedish"])
         show_advanced = st.checkbox("Show Advanced Analysis")
 
     # Load models (with spinner)
