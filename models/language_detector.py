@@ -13,6 +13,41 @@ class LanguageDetector:
         self.model_size = model_size
         self.model = whisper.load_model(model_size)
 
+        # Mapping from ISO codes to full language names
+        self.language_map = {
+            "en": "English",
+            "hi": "Hindi",
+            "ur": "Urdu",
+            "es": "Spanish",
+            "fr": "French",
+            "de": "German",
+            "zh": "Chinese",
+            "ja": "Japanese",
+            "ko": "Korean",
+            "ar": "Arabic",
+            "pt": "Portuguese",
+            "ru": "Russian",
+            "it": "Italian",
+            "bn": "Bengali",
+            "pa": "Punjabi",
+            "gu": "Gujarati",
+            "ta": "Tamil",
+            "te": "Telugu",
+            "mr": "Marathi",
+            "ml": "Malayalam",
+            "tr": "Turkish",
+            "th": "Thai",
+            "vi": "Vietnamese",
+            "id": "Indonesian",
+            "fa": "Persian (Farsi)",
+            "he": "Hebrew",
+            "el": "Greek",
+            "nl": "Dutch",
+            "pl": "Polish",
+            "sv": "Swedish",
+            "kn": "Kannada"
+        }
+
     def predict_from_audio(self, y, sr):
         """
         Detect language and transcribe speech using Whisper.
@@ -38,10 +73,15 @@ class LanguageDetector:
 
         # 5️⃣ Detect language
         _, probs = self.model.detect_language(mel)
-        language = max(probs, key=probs.get)
+        lang_code = max(probs, key=probs.get)
+        language = self.language_map.get(lang_code, lang_code)
 
-        # 6️⃣ Transcribe
-        result = self.model.transcribe(audio_tensor)
-        transcription = result['text'].strip()
+        # 6️⃣ Transcribe — explicitly tell Whisper which language to use
+        result = self.model.transcribe(audio_tensor, language=lang_code)
+        transcription = result["text"].strip()
+
+        # Handle case when transcription is blank
+        if not transcription:
+            transcription = "(No clear speech detected or unsupported language)"
 
         return language, transcription
