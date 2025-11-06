@@ -207,7 +207,7 @@ def main():
         model = ss.model
         lang_detector = ss.lang_detector
 
-    tab1, tab2, tab3 = st.tabs(["Live Detection", "Batch File Analysis", "History"])
+    tab1, tab3 = st.tabs(["Live Detection", "History"])
 
     with tab1:
         st.subheader("Live / Recorded Audio")
@@ -225,10 +225,10 @@ def main():
             st.info("Upload an audio file for analysis.")
             handle_file_upload(model, lang_detector, language_mode, key="live_upload")
 
-    with tab2:
-        st.subheader("Batch File Analysis")
-        st.info("Upload files for analysis.")
-        handle_file_upload(model, lang_detector, language_mode, key="batch_upload")
+    # with tab2:
+    #     st.subheader("Batch File Analysis")
+    #     st.info("Upload files for analysis.")
+    #     handle_file_upload(model, lang_detector, language_mode, key="batch_upload")
 
     with tab3:
         st.subheader("Detection History")
